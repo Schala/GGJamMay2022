@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Simple mouse-look behavior
+// Simple mouse-look behavior, put on camera object
 public class MouseLook : MonoBehaviour
 {
 	[SerializeField] float sensitivity = 100f;
