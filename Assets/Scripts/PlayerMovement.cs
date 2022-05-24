@@ -1,6 +1,7 @@
 using UnityEngine;
 
 // Player movement controller, put on player object
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] float speed = 12f;
