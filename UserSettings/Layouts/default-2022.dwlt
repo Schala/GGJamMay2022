@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 118
+  controlID: 141
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -421,36 +421,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/VRMShaders/VRM10/MToon10/Resources/VRM10
+    - Assets/VRM/Runtime/LookAt
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/VRMShaders/VRM10/MToon10/Resources/VRM10
+  - Assets/VRM/Runtime/LookAt
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\cmmeu\Documents\GitHub\GGJamMay2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 91}
-    m_SelectedIDs: 86610000
-    m_LastClickedID: 24966
-    m_ExpandedIDs: 000000001c5f0000c0600000ca600000d2600000d4600000d8600000da600000e0600000306100003c6100004c6100004e610000546100006261000000ca9a3b
+    scrollPos: {x: 0, y: 360}
+    m_SelectedIDs: 1a610000
+    m_LastClickedID: 24858
+    m_ExpandedIDs: 00000000145f0000b4600000b6600000b8600000bc600000be600000c0600000c6600000ca600000d2600000d4600000d6600000de600000106100003e6100009261000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Resources
-      m_OriginalName: Resources
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24930
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -464,7 +464,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c5f0000
+    m_ExpandedIDs: 00000000145f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.02286398, y: 0.9698721, z: -0.22076522, w: -0.10044671}
     speed: 2
-    m_Value: {x: -0.022863964, y: 0.9698714, z: -0.22076505, w: -0.100446634}
+    m_Value: {x: -0.02286396, y: 0.9698714, z: -0.22076505, w: -0.10044663}
   m_Size:
     m_Target: 1.607017
     speed: 2
