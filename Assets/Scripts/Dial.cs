@@ -5,30 +5,19 @@ public class Dial : MonoBehaviour
 {
 	[SerializeField] float sensitivity = 100.0f;
 	[SerializeField] GameObject needle = null;
-	public float rotation = 0.0f;
 
 	Vector3 lastMousePosition = Vector3.zero;
-	bool isRotating = false;
+	Ray mouseRay;
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
-		if (!isRotating) return;
+		if (!Input.GetMouseButtonDown(0)) return;
+		mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+		if (!Physics.Raycast(mouseRay, out _)) return;
 
 		var delta = Input.mousePosition - lastMousePosition;
-		rotation = (-(delta.x + delta.y) * sensitivity) % 360.0f;
-		needle.transform.RotateAround(transform.position, needle.transform.right, rotation);
-		lastMousePosition = Input.mousePosition;
-	}
-
-	private void OnMouseDrag()
-	{
-		isRotating = true;
-		lastMousePosition = Input.mousePosition;
-	}
-
-	private void OnMouseUp()
-	{
-		isRotating = false;
+		needle.transform.RotateAround(transform.position, needle.transform.forward, (Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg));
+		lastMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 	}
 }
